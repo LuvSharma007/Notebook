@@ -1,0 +1,23 @@
+body {
+    background-image: url('/images/book-background.jpg'); /* Update the path as necessary */
+    background-size: cover; /* Make the image cover the entire background */
+    background-position: center; /* Center the background image */
+    font-family: 'Georgia', serif; /* Use a serif font to give a more book-like feel */
+    color: #333; /* Text color for better contrast */
+    margin: 0;
+    padding: 0;
+    font-size: larger;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for container */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the container */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.list-group-item {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+}
