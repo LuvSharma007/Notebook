@@ -13,7 +13,7 @@ const userRoutes = require('./routes/user');
 const contentRoutes = require('./routes/content');
 
 
-mongoose.connect('mongodb://127.0.0.1:27017/Notebook')
+mongoose.connect('mongodb+srv://Bakihanma:bakihanma007@cluster0.a27mm.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
 .then(()=>{
     console.log('database connected !');    
 }).catch((error)=>{
