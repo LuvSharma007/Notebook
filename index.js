@@ -3,9 +3,12 @@ const app = express();
 const path = require('path');
 const mongoose = require('mongoose');
 const cookieParser = require('cookie-parser');
+require('dotenv').config();
 app.use(express.static(path.join(__dirname, 'public')));
 
 const PORT = process.env.PORT || 3000;
+const connectionString = process.env.DB;
+
 
 app.use(cookieParser());
 
@@ -13,7 +16,7 @@ const userRoutes = require('./routes/user');
 const contentRoutes = require('./routes/content');
 
 
-mongoose.connect('mongodb+srv://Bakihanma:bakihanma007@cluster0.a27mm.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
+mongoose.connect(connectionString)
 .then(()=>{
     console.log('database connected !');    
 }).catch((error)=>{
