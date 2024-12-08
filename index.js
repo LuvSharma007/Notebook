@@ -32,7 +32,7 @@ app.set('views',path.resolve('./views'));
 
 //mounted route
 app.use('/user',userRoutes);
-app.use('/content',contentRoutes);
+app.use('/user',contentRoutes);
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
