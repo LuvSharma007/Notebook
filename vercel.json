@@ -6,14 +6,11 @@
       "use": "@vercel/node"
     }
   ],
-  "redirects": [
-    {
-      "source": "/",
-      "destination": "/user/home",
-      "permanent": true
-    }
-  ],
   "routes": [
+    {
+      "src": "/",
+      "dest": "/user/home"
+    },
     {
       "src": "/(.*)",
       "dest": "index.js"
