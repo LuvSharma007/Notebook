@@ -6,12 +6,6 @@
      "use": "@vercel/node"
       }
     ],
-    "functions":{
-      "index.js":{
-        "memory":1024,
-        "maxDuration":50
-      }
-    },
     "routes": [
       {
      "src": "/(.*)",
