@@ -8,10 +8,6 @@
   ],
   "routes": [
     {
-      "src": "/",
-      "dest": "/user/home"
-    },
-    {
       "src": "/(.*)",
       "dest": "index.js"
     }
